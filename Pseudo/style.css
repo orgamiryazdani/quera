@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.step-container {
+  width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px #ccc;
+}
+
+/* change radio default display */
+
+.step-content {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ddd;
+  color: #333;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+label:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+/* change label color on radio button checked */
+
+.steps {
+  margin-top: 20px;
+}
+
+.error-message {
+  color: red;
+  display: none;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.error-message {
+  color: red;
+  display: none;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* show proper content on radio button checked for each tab */
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Your code here */
+/* input focus, validations and error messages */
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #3498db;
+  color: white;
+}
+
+input[type="radio"]:checked {
+  background-color: #3498db;
+  color: white;
+}
+
+input[type="radio"]#step1:checked ~ .steps #content1,
+input[type="radio"]#step2:checked ~ .steps #content2,
+input[type="radio"]#step3:checked ~ .steps #content3 {
+  display: block;
+}
+
+.step-content input:focus:invalid + .error-message {
+  display: block;
+}
+
+.step-content input:focus:invalid {
+  border: 1px solid red;
+}
+
+.step-content input:focus:valid {
+  border: 1px solid green;
+}

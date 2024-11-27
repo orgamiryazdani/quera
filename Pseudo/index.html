@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="step-container">
+      <input type="radio" name="step" id="step1" checked />
+      <label for="step1">Step 1</label>
+
+      <input type="radio" name="step" id="step2" />
+      <label for="step2">Step 2</label>
+
+      <input type="radio" name="step" id="step3" />
+      <label for="step3">Step 3</label>
+
+      <div class="steps">
+        <div class="step-content" id="content1">
+          <h2>Step 1</h2>
+          <p>Fill your age (required):</p>
+          <input type="number" placeholder="Your Age" min="10" max="120" required />
+          <span class="error-message">Enter a number between 10 and 120.</span>
+        </div>
+
+        <div class="step-content" id="content2">
+          <h2>Step 2</h2>
+          <p>Fill your name (required):</p>
+          <input type="text" placeholder="Your Name" minlength="3" pattern="^[a-zA-Z\u0600-\u06FF]{3,}$" required />
+          <span class="error-message"
+            >Enter a valid name (more than 3 character, numbers are not
+            allowed)</span
+          >
+        </div>
+
+        <div class="step-content" id="content3">
+          <h2>Step 3</h2>
+          <p>Fill your email adress (required):</p>
+          <input type="email" placeholder="Your Email Address" required/>
+          <span class="error-message">Enter a correct Email address</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
