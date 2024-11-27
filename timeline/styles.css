@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+table {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+}
+
+td {
+    background-color: #ecf0f1;
+}
+
+thead tr {
+    border-bottom: 2px solid #2980b9;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #d6eaf8;
+}
+
+tfoot tr td {
+    text-align: center;
+    font-weight: bold;
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #7f8c8d;
+}
+
+dl {
+    margin: 10px 0;
+}
+
+dt {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 10px 0 10px 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+li::marker {
+    color: #3498db;
+}
+
+li:hover {
+    color: #2980b9;
+}
