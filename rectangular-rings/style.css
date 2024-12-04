@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 100px;
+  background-color: #d5d8dc;
+}
+
+.right {
+  background-color: #2ecc71;
+  position: absolute;
+}
+
+.right:hover ~ .right {
+  z-index: 20;
+}
+
+.left:hover ~ .left {
+  z-index: 20;
+}
+
+.left {
+  position: absolute;
+  background-color: #e74c3c;
+}
+
+.right:nth-child(1) {
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 40px;
+}
+
+.right:nth-child(2) {
+  right: 0;
+  width: 40px;
+  height: 320px;
+}
+
+.right:nth-child(3) {
+  left: 80px;
+  width: 40px;
+  height: 320px;
+  z-index: 10;
+}
+
+.right:nth-child(4) {
+  bottom: 80px;
+  left: 80px;
+  width: 320px;
+  height: 40px;
+}
+.right:nth-child(4):hover {
+  z-index: 20;
+}
+
+.left:nth-child(5) {
+  bottom: 0;
+  left: 0;
+  width: 320px;
+  height: 40px;
+}
+
+.left:nth-child(6) {
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 320px;
+}
+
+.left:nth-child(7) {
+  bottom: 0;
+  right: 80px;
+  width: 40px;
+  height: 320px;
+}
+
+.left:nth-child(8) {
+  top: 80px;
+  left: 0px;
+  width: 320px;
+  height: 40px;
+}
+
+.left:nth-child(8):hover {
+  z-index: 20;
+}
