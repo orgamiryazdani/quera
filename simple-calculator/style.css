@@ -1,0 +1,103 @@
+@font-face {
+  font-family: RobotoCondensed;
+  src: url(RobotoCondensed.woff);
+}
+
+@font-face {
+  font-family: DigitalNumbers;
+  src: url(DigitalNumbers.woff);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  font-size: 1.5em;
+}
+
+#result {
+  height: 28%;
+  width: 100%;
+  background-color: #eee;
+  color: #444;
+  font-family: "DigitalNumbers";
+  text-align: right;
+  font-size: 3.5em;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#app {
+  width: 80%;
+  height: 70%;
+  max-width: 580px;
+  min-height: 280px;
+}
+
+#keypad {
+  display: flex;
+  height: 72%;
+  width: 100%;
+  color: #ddd;
+  font-family: "RobotoCondensed";
+  background-color: blue;
+}
+
+#nums {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 54%;
+  background-color: red;
+}
+
+#nums .key {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #095057;
+  width: 33.3%;
+  height: 25%;
+}
+
+#nums .key:nth-child(even) {
+  background-color: #19676e;
+}
+
+#ops {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(4, 25%);
+  flex-wrap: wrap;
+  height: 100%;
+  width: 46%;
+  border: none;
+  font-family: "RobotoCondensed";
+}
+
+#ops .key {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d34e47;
+}
+
+#ops .key:nth-child(2),
+#ops .key:nth-child(3),
+#ops .key:nth-child(6) {
+  background-color: #b52d26;
+}
+#ops :nth-child(5) {
+  background-color: #c43e37;
+  grid-row: span 2;
+}
