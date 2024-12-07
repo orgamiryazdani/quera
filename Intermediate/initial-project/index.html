@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Word Search Game</title>
+    <link
+      rel="stylesheet"
+      href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="game-container">
+      <h1>Word Search Game</h1>
+
+      <!-- Section for inputting the grid matrix -->
+      <div
+        class="matrix-input"
+        id="matrix-input">
+        <!-- Textarea to take grid input from user -->
+        <textarea
+          id="grid-input"
+          placeholder="Enter each row of the matrix separated by a newline"
+          required></textarea>
+
+        <!-- Button to set the grid based on user input and start the game -->
+        <button onclick="updateGrid()">Set Grid</button>
+      </div>
+
+      <!-- Section for displaying the word search grid and search -->
+      <div
+        class="game"
+        id="game"
+        style="display: none">
+        <!-- The word search grid will be rendered here -->
+        <div id="word-grid"></div>
+
+        <!-- Form for user to input the word to find -->
+        <input
+          type="text"
+          id="word-input"
+          placeholder="Enter word to find" />
+
+        <!-- Button to start the search for the word -->
+        <button onclick="findWord()">Find Word</button>
+
+        <!-- The result of the search will be displayed here -->
+        <div id="result"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
