@@ -1,0 +1,18 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+th {
+  font-size: larger;
+  border: 1px solid black;
+}
+
+td {
+  font-size: large;
+  border: 1px solid blueviolet;
+}
+.teams {
+  display: flex;
+  gap: 20px;
+}
