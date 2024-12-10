@@ -1,0 +1,48 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+th {
+  font-size: larger;
+}
+
+table,
+td,
+th {
+  border: 1px solid black;
+}
+
+td {
+  font-size: large;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(235, 235, 235);
+}
+
+.teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team {
+  min-width: 45%;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.status {
+  margin-top: 100px;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
