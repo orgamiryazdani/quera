@@ -1,0 +1,182 @@
+* {
+  color: hsla(360, 100%, 100%, 1);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato;
+  border-radius: 2.5rem;
+}
+
+body {
+  background-color: hsl(222, 36%, 5%);
+}
+
+/* WRITE HERE FOR LARGE SCREEN */
+
+.body-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80%;
+}
+
+.header {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.header div {
+  position: relative;
+}
+
+.dropdown-content {
+  right: 50%;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 120%;
+  display: none;
+  flex-direction: column;
+  width: 8rem;
+  gap: 1rem;
+  background-color: #4e4e4e;
+  border-radius: 0.5rem;
+}
+
+.dropdown-content span {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+input[type="checkbox"]:checked + .dropdown-content {
+  position: absolute;
+  display: flex;
+}
+
+#dropdown-checkbox {
+  display: none;
+}
+
+img {
+  border-radius: 100%;
+}
+
+.top-section {
+  height: 18rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#lt {
+  width: 20%;
+  height: 18rem;
+  background-color: #181a20;
+}
+
+#m {
+  width: 20%;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#mt,
+#mb {
+  width: 100%;
+  height: 50%;
+  background-color: #181a20;
+}
+
+#rt {
+  width: 60%;
+  height: 18rem;
+  background-color: #181a20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#rm {
+  width: 50%;
+  height: 30%;
+  background-color: #444444;
+}
+
+.top-middle-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 18rem;
+  background-color: #181a20;
+}
+
+.top-middle-section div {
+  width: 10%;
+  height: 80%;
+  background-color: #444444;
+}
+
+.grid-layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 12rem));
+  gap: 1rem;
+}
+
+.grid-layout div {
+  height: 12rem;
+  background-color: #444444;
+}
+
+/* WRITE HERE FOR MOBILE SCREEN */
+
+@media only screen and (max-width: 600px) {
+  .top-section {
+    flex-direction: column;
+    height: auto;
+  }
+  #lt,
+  #rt,
+  #m {
+    width: 100%;
+  }
+  #m {
+    width: 100%;
+    height: 16rem;
+    flex-direction: row;
+  }
+  #rt {
+    height: 18rem;
+  }
+  #mt,
+  #mb {
+    width: 100%;
+    height: 16rem;
+  }
+  .top-middle-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .top-middle-section div {
+    width: 100%;
+  }
+
+  .grid-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
