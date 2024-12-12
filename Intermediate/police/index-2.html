@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="./style-2.css" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="./assets/background.png"
+        alt="background"
+        class="background" />
+      <img
+        src="./assets/monitor.svg"
+        alt="monitor"
+        class="monitor" />
+      <img
+        src="./assets/wood.jpg"
+        alt="wood"
+        class="table" />
+      <div class="card">
+        <input
+          autocomplete="off"
+          pattern="^(?!.*sherlock)[a-zA-Z]{5,15}$"
+          type="text"
+          name="text"
+          class="searchBox"
+          placeholder="Search" />
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Document Id</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sherlock</td>
+              <td>6000</td>
+            </tr>
+            <tr>
+              <td>Sir Edwin</td>
+              <td>9400</td>
+            </tr>
+            <tr class="active-row">
+              <td>Jim Moriarty</td>
+              <td>4200</td>
+            </tr>
+            <tr>
+              <td>Dr. John Watson</td>
+              <td>5150</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
