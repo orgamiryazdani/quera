@@ -1,0 +1,180 @@
+@font-face {
+  font-family: MJ;
+  src: url(../public/fonts/Mj\ flow.ttf);
+}
+body {
+  direction: rtl;
+  margin: 0;
+  font-family: MJ;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button {
+  font-family: MJ;
+}
+
+.ltr {
+  direction: ltr;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.ltr input,
+.ltr.input,
+.ltr.button,
+.ltr button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.line {
+  background-color: cornflowerblue;
+}
+
+.app {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.page-title {
+  color: cornflowerblue;
+  margin: 0;
+}
+.app-card {
+  width: 400px;
+  height: 600px;
+  border-radius: 10px;
+  border: 2px solid cornflowerblue;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.app-form {
+  display: flex;
+  flex-direction: column;
+  column-gap: 10px;
+  height: 100%;
+}
+.form-group {
+  margin-bottom: 5px;
+}
+.app-input {
+  box-sizing: border-box;
+  padding: 2px 5px;
+  display: flex;
+  background-color: #cddeff69;
+  width: 100%;
+  border: 1px solid cornflowerblue;
+  border-radius: 5px;
+}
+
+.app-input .input {
+  color: rgb(8, 84, 119);
+  outline: 0;
+  background-color: transparent;
+  border: 0 none;
+  box-shadow: none;
+  flex: 1;
+  padding: 8px 0;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+.input-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  border-radius: 20px;
+}
+
+.quera-pay {
+  text-align: center;
+  color: rgb(117, 163, 248);
+  font-weight: bold;
+}
+
+.app-card {
+  display: flex;
+  flex-direction: column;
+}
+.app-card section {
+  flex: 1;
+  margin: 20px 0;
+}
+
+.page-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.logo-img {
+  width: 24px;
+  height: 24px;
+}
+
+.group-2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.group-2 > * {
+  flex: 1;
+  width: unset;
+}
+
+.app-button {
+  width: 100%;
+  padding: 10px 5px;
+  text-align: center;
+  background-color: rgb(11, 90, 182);
+  color: white;
+  border: 0 none;
+  box-shadow: none 0;
+  outline: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  opacity: 0.9;
+}
+
+.app-button:hover {
+  opacity: 1;
+}
+
+.card-bg {
+  padding: 3px 20px;
+  border-radius: 5px;
+  background-color: rgba(223, 234, 255, 0.39);
+  text-align: center;
+}
+
+.re-send {
+  background-color: blueviolet;
+}
+
+.factor {
+  display: flex;
+  flex-direction: column;
+}
+
+.factor-title {
+}
+
+.factor-value {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 3px;
+}
