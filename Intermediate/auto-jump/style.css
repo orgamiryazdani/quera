@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Noto Naskh Arabic", serif;
+}
+
+.card {
+  width: 500px;
+  height: 300px;
+  color: #fff;
+  /* From https://css.glass */
+  background: rgba(45, 81, 132, 0.49);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(45, 81, 132, 0.5);
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.front {
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-no {
+  font-size: 30px;
+  margin-top: 60px;
+}
+
+.card-holder {
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+.name {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+input {
+  width: 20%;
+  padding: 1px;
+  text-align: center;
+  border: 0;
+  font-size: 30px;
+  margin: 0 10px;
+  background: transparent;
+  border-bottom: 1px solid #999;
+  outline: none;
+  appearance: none;
+  color: white;
+}
+
+input:focus {
+  border-bottom: 3px solid #000;
+}
