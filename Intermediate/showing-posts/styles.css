@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  font-family: Tahoma;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+h1 {
+  font-size: 26px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul li {
+  margin-bottom: 14px;
+  padding: 6px;
+  border-radius: 5px;
+  width: 500px;
+  border: 1px solid #ccc;
+}
+
+ul li h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+ul li p {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+ul li em {
+  font-size: 16px;
+  color: #999;
+}
