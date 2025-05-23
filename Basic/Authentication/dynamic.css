@@ -1,0 +1,108 @@
+/* write your code here ... */
+
+* {
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 50rem;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+
+#login {
+  position: absolute;
+  left: 800px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+label > span {
+  font-size: 0.8rem;
+  margin-left: 20px;
+}
+
+label > img {
+  width: 1.2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+label > input {
+  margin-left: 20px;
+  height: 35px;
+  padding-inline: 10px;
+  color: white;
+  background-color: var(--color--form-input-background);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+label > input:invalid {
+  background-color: var(--color--form-input-background--invalid);
+}
+
+button {
+  margin-left: 20px;
+  height: 40px;
+  margin-top: 15px;
+  background-color: var(--color--form-button-background);
+  color: var(--color--form-button-foreground);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+button:hover {
+  background-color: var(--color--form-button-background--hover);
+}
+
+p {
+  color: var(--color--form-paragraph-foreground);
+  margin-left: 20px;
+}
+
+a {
+  color: var(--color--form-link-foreground);
+}
+
+section {
+  width: 40%;
+  padding: 2rem;
+}
+
+section > img {
+  width: 16rem;
+}
